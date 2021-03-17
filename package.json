@@ -1,0 +1,12 @@
+{
+  "name": "nanadaru-voxel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:optgeo/nanadaru-voxel",
+  "author": "Hidenori FUJIMURA <hfu@users.noreply.github.com>",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "@turf/buffer": "^6.3.0",
+    "json-text-sequence": "^0.3.0"
+  }
+}
