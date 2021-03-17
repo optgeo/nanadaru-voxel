@@ -1,4 +1,4 @@
-MAXZOOM = 20
+MAXZOOM = 21
 DETAIL = 32 - MAXZOOM
 
 task :download do
@@ -14,7 +14,7 @@ end
 task :produce do
   sh [
     "ogr2ogr -lco RS=YES -f GeoJSONSeq",
-    "-limit 1000000",
+    "-limit 5000000",
     "-s_srs EPSG:6676 -t_srs EPSG:4326",
     "/vsistdout/ 08OF4060.shp",
     "| node filter.js",
@@ -28,7 +28,7 @@ task :produce do
     "--base-zoom=#{MAXZOOM}",
     "--full-detail=#{DETAIL}",
     "--low-detail=#{DETAIL}",
-    "--maximum-tile-features=50000",
+    "--maximum-tile-features=200000",
     "; tile-join",
     "--force",
     "--no-tile-compression",
