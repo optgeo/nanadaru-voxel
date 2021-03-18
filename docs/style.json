@@ -1,0 +1,172 @@
+{
+  "center": [
+    138.938841,
+    34.791407
+  ],
+  "layers": [
+    {
+      "id": "background",
+      "paint": {
+        "background-color": [
+          "rgb",
+          20,
+          20,
+          20
+        ]
+      },
+      "type": "background"
+    },
+    {
+      "id": "pc",
+      "layout": {},
+      "paint": {
+        "fill-extrusion-base": [
+          "get",
+          "height"
+        ],
+        "fill-extrusion-color": [
+          "match",
+          [
+            "get",
+            "asprsclass"
+          ],
+          0,
+          [
+            "rgb",
+            255,
+            255,
+            255
+          ],
+          1,
+          [
+            "rgb",
+            255,
+            255,
+            116
+          ],
+          2,
+          [
+            "rgb",
+            243,
+            173,
+            61
+          ],
+          3,
+          [
+            "rgb",
+            161,
+            252,
+            142
+          ],
+          4,
+          [
+            "rgb",
+            117,
+            251,
+            76
+          ],
+          5,
+          [
+            "rgb",
+            76,
+            167,
+            48
+          ],
+          6,
+          [
+            "rgb",
+            234,
+            51,
+            36
+          ],
+          7,
+          [
+            "rgb",
+            116,
+            20,
+            12
+          ],
+          8,
+          [
+            "rgb",
+            243,
+            173,
+            250
+          ],
+          9,
+          [
+            "rgb",
+            0,
+            0,
+            245
+          ],
+          10,
+          [
+            "rgb",
+            234,
+            51,
+            247
+          ],
+          11,
+          [
+            "rgb",
+            156,
+            30,
+            246
+          ],
+          12,
+          [
+            "rgb",
+            117,
+            251,
+            253
+          ],
+          13,
+          [
+            "rgb",
+            76,
+            167,
+            248
+          ],
+          14,
+          [
+            "rgb",
+            85,
+            85,
+            165
+          ],
+          [
+            "rgb",
+            170,
+            170,
+            170
+          ]
+        ],
+        "fill-extrusion-height": [
+          "+",
+          [
+            "get",
+            "height"
+          ],
+          1
+        ]
+      },
+      "source": "v",
+      "source-layer": "pc",
+      "type": "fill-extrusion"
+    }
+  ],
+  "sources": {
+    "v": {
+      "attribution": "出典：静岡県ポイントクラウドデータベース",
+      "maxzoom": 22,
+      "minzoom": 12,
+      "tiles": [
+        "https://optgeo.github.io/nanadaru-voxel/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "version": 8,
+  "zoom": 17
+}

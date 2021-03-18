@@ -13,6 +13,12 @@ const p = new Parser()
     f.geometry = buffer(f.geometry, 1e-4 / Math.sqrt(2), {
       units: 'kilometers', steps: 1
     }).geometry
+    f.tippecanoe = {
+      minzoom: f.properties.intensity > 10 ? 12 : 16
+    }
+    if (f.properties.asprsclass != 2) {
+      f.tippecanoe.minzoom = 16
+    }
     process.stdout.write(`\x1e${JSON.stringify(f)}\n`)
   })
   .on('truncated', buf => {

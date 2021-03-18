@@ -1,4 +1,4 @@
-MAXZOOM = 21
+MAXZOOM = 22
 DETAIL = 32 - MAXZOOM
 
 task :download do
@@ -14,7 +14,7 @@ end
 task :produce do
   sh [
     "ogr2ogr -lco RS=YES -f GeoJSONSeq",
-    "-limit 5000000",
+    #"-limit 7000000",
     "-s_srs EPSG:6676 -t_srs EPSG:4326",
     "/vsistdout/ 08OF4060.shp",
     "| node filter.js",
