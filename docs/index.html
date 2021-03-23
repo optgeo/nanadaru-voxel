@@ -23,6 +23,7 @@ const map = new mapboxgl.Map({
   hash: true,
   maxZoom: 26
 })
+map.transform._fov = 1.0
 
 map.addControl(new mapboxgl.NavigationControl())
 map.addControl(new mapboxgl.ScaleControl({

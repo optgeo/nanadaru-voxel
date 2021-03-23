@@ -7,6 +7,7 @@
   "license": "CC0-1.0",
   "dependencies": {
     "@turf/buffer": "^6.3.0",
+    "@turf/helpers": "^6.3.0",
     "json-text-sequence": "^0.3.0"
   }
 }

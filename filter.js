@@ -6,13 +6,15 @@ const p = new Parser()
     f.properties.height = f.geometry.coordinates[2]
     f.properties.intensity = Math.round(f.properties.intensity / 256.0)
     f.properties.asprsclass = parseInt(f.properties.asprsclass, 2)
-    delete f.properties.gpstime
-    delete f.properties.return_num
-    delete f.properties.angle
-    delete f.properties.return_tot
+    //delete f.properties.gpstime
+    //delete f.properties.return_num
+    //delete f.properties.angle
+    //delete f.properties.return_tot
+    /*
     f.geometry = buffer(f.geometry, 1e-4 / Math.sqrt(2), {
       units: 'kilometers', steps: 1
     }).geometry
+    */
     f.tippecanoe = {
       minzoom: f.properties.intensity > 10 ? 12 : 16
     }

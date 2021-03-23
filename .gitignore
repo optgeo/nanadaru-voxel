@@ -1,5 +1,5 @@
-08OF4060*
-tiles.mbtiles*
+*.las
+*.mbtiles*
 yarn.lock
 
 # Logs
