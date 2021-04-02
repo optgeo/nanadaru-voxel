@@ -40,7 +40,10 @@
             "get",
             "height"
           ],
-          1
+          [
+            "get",
+            "spacing"
+          ]
         ]
       },
       "source": "p",
@@ -79,9 +82,9 @@
     "p": {
       "attribution": "出典：静岡県ポイントクラウドデータベース",
       "maxzoom": 17,
-      "minzoom": 14,
+      "minzoom": 13,
       "tiles": [
-        "https://optgeo.github.io/nanadaru-voxel/zxy/{z}/{x}/{y}.pbf"
+        "http://m343:9966/zxy/{z}/{x}/{y}.pbf"
       ],
       "type": "vector"
     }

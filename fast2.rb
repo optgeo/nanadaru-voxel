@@ -1,16 +1,16 @@
 require 'json'
 spacing = ENV['SPACING'].to_i
 zoom = case spacing
-  when 0.5
-    18
-  when 1
-    17
-  when 2
-    16
-  when 4
-    15
-  when 8
+  when 1600
+    13
+  when 800
     14
+  when 400
+    15
+  when 200
+    16
+  when 100
+    17
   end
 
 while gets
@@ -27,7 +27,7 @@ while gets
     :properties => {
       :height => r[2].to_f,
       :color => r[4],
-      :spacing => spacing
+      :spacing => spacing / 100
     },
     :tippecanoe => {
       :layer => "asprs#{r[3]}",
